@@ -45,8 +45,9 @@
     flex-direction: column;
     justify-content: center;
   }
-  nav-active {
-    transform: translateX(0);
+
+  .nav-active {
+    transform: translateX(0) !important;
   }
 
   :root {
@@ -55,24 +56,23 @@
 }
 
 .section-title {
-    font-size: 1.6rem;
-    margin: 0.6rem 0 2.5rem;
+  font-size: 1.6rem;
+  margin: 0.6rem 0 2.5rem;
 }
 
 .pre-title {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 /* Hero Section */
 #hero {
-    grid-template-columns: 1fr;
-    height: fit-content;
+  grid-template-columns: 1fr;
+  height: fit-content;
 }
 
 .hero-right {
-    order: -1;
+  order: -1;
 }
-
 
 @media screen and (max-width: 640px) {
 }
