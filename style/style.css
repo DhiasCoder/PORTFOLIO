@@ -27,12 +27,17 @@
   font-family: "Poppins" sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
   display: flex;
   position: center;
   flex-direction: column;
+  padding: 0 1rem;
 }
 
 h1,
@@ -129,9 +134,60 @@ a {
 }
 
 /* Buttons */
-.nav ul li a span {
+
+.nav ul li a {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40;
+}
+
+.link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+.nav ul li a {
+  position: relative;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #a0a0a0;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+.nav ul li a:before,
+.nav ul li a:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background-color: #18f08b;
+  transition: 0.5s;
+}
+.nav ul li a:after {
+  left: 0;
+  bottom: -10px;
+}
+.nav ul li a:before {
+  right: 0;
+  top: -10px;
+}
+.nav ul li a:hover {
+  color: #ffffff;
+}
+.nav ul li a:hover:after,
+.nav ul li a:hover:before {
+  width: 100%;
+}
+
+/* .nav ul li a span {
   color: var(--WarnaTextDefault);
 }
+
 .nav ul li a {
   position: relative;
   background: #fff;
@@ -154,7 +210,8 @@ a {
   position: absolute;
   inset: 2px;
   background: #27282c;
-}
+} */
+
 .nav ul li a span {
   position: relative;
   z-index: 1;
@@ -327,6 +384,34 @@ nav ul li a {
 
 .hero-left .hero-warna a span:hover {
   color: green;
+}
+
+.info-right {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: auto;
+}
+
+.info-pair {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.info-pair h3:first-child {
+  margin-right: 1rem;
+  padding-right: 1rem; /* Adjust this to increase/decrease spacing */
+}
+
+.info-pair h3 {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.info-pair a {
+  text-decoration: none;
 }
 
 /* Service Section */
@@ -527,7 +612,7 @@ nav ul li a {
   color: white;
 }
 
-.education3 a{
+.education3 a {
   color: var(--primaryIconColor);
 }
 

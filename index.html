@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" oncontextmenu="return false">
+  
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,6 +8,7 @@
     <title>Dhias Habibi - Sistem Informasi</title>
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/responsive.css" />
+    <script src="script/main.js"></script>
   </head>
   <body>
     <!-- Background -->
@@ -31,31 +33,11 @@
           </div>
           <nav>
             <ul>
-              <li>
-                <a href="#services" style="--clr: #48dd86"
-                  ><span>Services</span><i></i
-                ></a>
-              </li>
-              <li>
-                <a href="#portfolios" style="--clr: #48dd86"
-                  ><span>Portfolios</span><i></i
-                ></a>
-              </li>
-              <li>
-                <a href="#skills" style="--clr: #48dd86"
-                  ><span>Skills</span><i></i
-                ></a>
-              </li>
-              <li>
-                <a href="#contact" style="--clr: #48dd86"
-                  ><span>Contact</span><i></i
-                ></a>
-              </li>
-              <li>
-                <a href="/resume.pdf" style="--clr: #48dd86"
-                  ><span>Resume</span><i></i
-                ></a>
-              </li>
+              <li><a href="#services" class="link">Services</a></li>
+              <li><a href="#portfolios" class="link">Portfolios</a></li>
+              <li><a href="#skills" class="link">Skills</a></li>
+              <li><a href="#contact" class="link">Contact</a></li>
+              <li><a href="#resume" class="link">Resume</a></li>
             </ul>
           </nav>
 
@@ -73,26 +55,22 @@
             <h1 class="hero-names">-</h1>
             <hr class="line1" />
             <br />
-            <div class="info-left">
-              <h3 class="hero-warna">
-                Name : <span>Muhammad Dhias Habibi</span>
-              </h3>
-              <br />
-              <h3 class="hero-warna">Age : <span>19</span></h3>
-            </div>
-            <br />
             <div class="info-right">
-              <h3 class="hero-warna">
-                Email :
-                <a href="mailto:diashabibi8@gmail.com"
-                  ><span class="spans">diashabibi8@gmail.com</span></a
-                >
-              </h3>
+              <div class="info-pair">
+                <h3 class="hero-warna">Name : <span>John Doe</span></h3>
+                <h3 class="hero-warna">Age : <span>25</span></h3>
+              </div>
               <br />
-              <h3 class="hero-warna">
-                Origin : <span>Palembang, Sumatera Selatan, Indonesia</span>
-              </h3>
-            </div>
+              <div class="info-pair">
+                <h3 class="hero-warna">
+                  Email :
+                  <a href="mailto:diashabibi8@gmail.com"><span class="spans">diashabibi8@gmail.com</span></a>
+                </h3>
+                <h3 class="hero-warna">
+                  Origin : <span>Palembang, Sumatera Selatan, Indonesia</span>
+                </h3>
+              </div>
+            </div>            
             <br />
             <hr class="line2" />
             <br />
@@ -464,7 +442,9 @@
     <footer>
       <div class="footer-icons">
         <!-- Instagram -->
-        <a href="https://www.instagram.com/dhiasmhamd?igsh=MWx2MTRxbXlrNGNqdw==">
+        <a
+          href="https://www.instagram.com/dhiasmhamd?igsh=MWx2MTRxbXlrNGNqdw=="
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -533,6 +513,5 @@
       <p>&#169; 2024 - Made by Dhias Coder</p>
     </footer>
     <!-- End of Contact -->
-    <script src="script/main.js"></script>
   </body>
 </html>
