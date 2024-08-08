@@ -380,6 +380,7 @@ nav ul li a {
 .portfolio {
   border-radius: var(--itemBorderRadius);
   overflow: hidden;
+  align-items: center;
   border: 1px solid var(--borderColor);
   background: var(--primaryBackgroundColor);
 }
@@ -414,6 +415,12 @@ nav ul li a {
 
 .portfolio-info {
   padding: 2rem 1.5rem;
+  filter: blur(2px);
+}
+
+.portfolio-info:hover {
+  transform: scale3d(1.0);
+  filter: none;
 }
 
 .portfolio-info p {
@@ -485,7 +492,7 @@ nav ul li a {
 #skills {
   padding: var(--sectionPadding);
   background: var(--secondaryBackgroundColor);
-  background: black;
+  background: none;
 }
 
 .skills-grid {
@@ -643,7 +650,7 @@ footer {
   align-items: center;
   display: flex;
   flex-direction: column;
-  background: black;
+  background: none;
 }
 
 .footer-icons {
