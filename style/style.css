@@ -50,7 +50,7 @@ strong {
   border: none;
   width: 70%;
   height: 2.5px;
-  color: #333; 
+  color: #333;
   background-color: #333;
 }
 
@@ -59,7 +59,7 @@ strong {
   border: none;
   width: 100px;
   height: 2.5px;
-  color: #333; 
+  color: #333;
   background-color: #333;
 }
 
@@ -150,7 +150,7 @@ a {
 }
 
 .nav ul li a:before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 2px;
   background: #27282c;
@@ -167,7 +167,7 @@ a {
 }
 
 .nav ul li a i::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 80%;
@@ -184,7 +184,7 @@ a {
 }
 
 .nav ul li a i::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 20%;
@@ -327,7 +327,6 @@ nav ul li a {
 
 .hero-left .hero-warna a span:hover {
   color: green;
-  fill: green;
 }
 
 /* Service Section */
@@ -372,9 +371,6 @@ nav ul li a {
 /* Portfolio Section */
 #portfolios {
   padding: var(--sectionPadding);
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
 }
 
 .portfolio {
@@ -419,7 +415,7 @@ nav ul li a {
 }
 
 .portfolio-info:hover {
-  transform: scale3d(1.0);
+  transform: scale3d(1);
   filter: none;
 }
 
@@ -529,6 +525,14 @@ nav ul li a {
 
 .education-info h4 {
   color: white;
+}
+
+.education3 a{
+  color: var(--primaryIconColor);
+}
+
+.education a:hover {
+  color: green;
 }
 
 /* The dot on the line */
