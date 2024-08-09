@@ -40,6 +40,17 @@ body {
   padding: 0 1rem;
 }
 
+::-webkit-scrollbar {
+  box-shadow: inset 0 0 5px #aaa;
+}
+::-webkit-scrollbar-thumb {
+  background: #48dd86;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #35c15a;
+}
+
 h1,
 h2,
 h3,
@@ -372,9 +383,9 @@ nav ul li a {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
-  cursor: auto;
+  box-shadow: auto rgba(0, 0, 0, 1);
   margin: auto;
+  padding: var(--sectionPadding);
 }
 
 .hero-right:hover img {
@@ -657,7 +668,7 @@ nav ul li a {
 
 .contact {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 3rem;
 }
 
