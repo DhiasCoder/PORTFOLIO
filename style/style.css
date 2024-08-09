@@ -395,13 +395,12 @@ nav ul li a {
 .info-pair {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   align-items: center;
 }
 
 .info-pair h3:first-child {
   margin-right: 1rem;
-  padding-right: 1rem; /* Adjust this to increase/decrease spacing */
+  padding-right: 1rem;
 }
 
 .info-pair h3 {
@@ -633,7 +632,7 @@ nav ul li a {
 
 .skills-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   margin-top: 1.5rem;
 }
 
